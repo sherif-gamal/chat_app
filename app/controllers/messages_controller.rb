@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
 
     if @message.save
       respond_to do |format|
-        # format.js
+        format.js
         format.json { render json: @message}
       end
     end
