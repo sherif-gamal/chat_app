@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div id="user-list">
+  <h1>Listing Users</h1>
+  <ul>
+  <% @users.each do |user| %>
+      <a href=<%= "/chat/#{user.user_name}" %>><li><%= user.user_name %></li></a>
+  <% end %>
+  </ul>
+</div>
+<br>
